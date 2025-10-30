@@ -1,0 +1,63 @@
+.card-item {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  width: 280px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.card-item:hover {
+  transform: translateY(-5px);
+}
+
+.user-name {
+  font-size: 20px;
+  color: #2b2b2b;
+  margin-bottom: 5px;
+}
+
+.user-username {
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.user-email,
+.user-address,
+.user-phone,
+.user-website,
+.user-company {
+  color: #444;
+  font-size: 14px;
+  margin: 3px 0;
+}
+
+@media (max-width: 600px) {
+  .card-item {
+    width: 90%;
+    padding: 12px;
+  }
+  .user-name {
+    font-size: 18px;
+  }
+  .user-email,
+  .user-address,
+  .user-phone,
+  .user-website,
+  .user-company {
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  .card-item {
+    width: 45%;
+  }
+}
+
+@media (min-width: 1025px) {
+  .card-item {
+    width: 30%;
+  }
+}
